@@ -38,7 +38,7 @@ def footer():
 
 def main() -> None:
     # Start Writing Code Here
-    st.write('Fantasy Sports')
+    st.markdown('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedLYR3Ye77ie5qFozkBBUGFJIdgWn3Qy65475kkt8l0gXoBA/viewform?embedded=true" width="1000" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>', unsafe_allow_html=True)
     #footer()
 
 if __name__ == '__main__':
