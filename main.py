@@ -37,6 +37,7 @@ def footer():
 
 # google form inputs processing
 def top_players():
+
     df = pd.read_csv("./data/leaderboard-demo.csv")
     return df
 # widget
@@ -44,6 +45,9 @@ tab1, tab2, tab3, tab4 = st.tabs(["Leaderboard", "Points Table", "Team Standings
 
 with tab1:
     st.header("🌟 LeaderBoard")
+    st.markdown("""
+    > Last Updated: Match 0
+    """)
     df = top_players()
     st.dataframe(df)
 
